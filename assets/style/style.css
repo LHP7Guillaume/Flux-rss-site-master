@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto Slab', serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.borderSmartphone {
+    height: 4px;
+    width: 100%;
+    background: red;
+}
+
+.borderTablet {
+    height: 4px;
+    width: 100%;
+    background: yellow;
+}
+
+.borderPc {
+    height: 4px;
+    width: 100%;
+    background: orange;
+}
+
+.borderPhoto {
+    height: 4px;
+    width: 100%;
+    background: green;
+}
+
+.borderVideo {
+    height: 4px;
+    width: 100%;
+    background: orchid;
+}
+
+.sizeIcon {
+    font-size: 1.5rem;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image:
+        linear-gradient(rgba(162, 162, 180, 0.1),
+            rgba(162, 162, 180, 0.3));
+    background-size: cover;
+    z-index: -1;
+    /* Keep the background behind the content */
+    -webkit-background-size: cover;
+    /* pour Chrome et Safari */
+    -moz-background-size: cover;
+    /* pour Firefox */
+    -o-background-size: cover;
+    /* pour Opera */
+    background-size: cover;
+    /* version standardisée */
+}
+
+footer {
+    /* Height of the footer */
+    flex-shrink: 0;
+    background: #6868ab;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    margin-top: 5rem;
+}
+
+.picture {
+    height: 30rem;
+    width: 40rem;
+}
+
+.imgLogo {
+    height: 3rem;
+    width: auto;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.container {
+    margin-top: 3rem;
+    padding-top: 5rem;
+}
+
+.centerText {
+    text-align: justify;
+}
+
+.bg-container {
+    background-color: #ffffffa1;
+}
+
+.bg-bg-light {
+    background-color: #6868ab;
+}
+
+@media screen and (max-width: 992px) {
+    .selectionOne {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-xlg {
+        width: 90%;
+
+    }
+}
+
+.modal-dialog,
+.modal-content {
+    /* 80% of window height */
+    height: 80%;
+}
+
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    max-height: calc(100% - 120px);
+    overflow-y: scroll;
+}
+
+.article {
+    font-size: x-large;
+}
